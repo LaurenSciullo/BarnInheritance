@@ -9,8 +9,9 @@ public class BarnRunner
 				superClass[0] = new ShowHorses();
 				superClass[1] = new NonShowHorses();
 				
-				/*Barn[] polymorph = new ShowHorses[1];
-				Barn[] polymorph2 = new NonShowHorses[1];
+				Barn[] polymorph = new ShowHorses[1];
+				polymorph[0] = new ShowHorses();
+				/*Barn[] polymorph2 = new NonShowHorses[1];
 				ShowHorses[] subEverything = new ShowHorses[1];
 				NonShowHorses[] subEverything2 = new NonShowHorses[1]; */
 				
@@ -25,6 +26,14 @@ public class BarnRunner
 						System.out.println();
 					}
 				
+				for(Barn b: polymorph)
+					{
+						b.trainers();
+						b.barnLook();
+						((ShowHorses)b).jumpers();
+						
+						System.out.println();
+					}
 				
 
 			}

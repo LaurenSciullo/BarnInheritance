@@ -15,5 +15,10 @@ public class ShowHorses extends Capricorn
 			System.out.println("Trace Ferguson");
 			
 		}
+	
+	public void jumpers()
+	{
+		System.out.println("jump horses");
+	}
 
 	}
