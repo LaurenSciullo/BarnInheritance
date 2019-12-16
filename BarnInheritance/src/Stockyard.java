@@ -1,5 +1,5 @@
 
-public  class Stockyard extends Barn
+public abstract class Stockyard extends Barn
 	{
 
 	@Override
@@ -12,21 +12,14 @@ public  class Stockyard extends Barn
 	@Override
 	public void location()
 		{
-			// TODO Auto-generated method stub
+			System.out.println("Kansas");
 			
 		}
 
 	@Override
 	public void barnLook()
 		{
-			// TODO Auto-generated method stub
-			
-		}
-
-	@Override
-	public void trainers()
-		{
-			// TODO Auto-generated method stub
+			System.out.println("Open, plain, cow-ish");
 			
 		}
 

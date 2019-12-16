@@ -15,5 +15,10 @@ public class NonShowHorses extends Capricorn
 			System.out.println("Debbie Bergman");
 			
 		}
+	
+	public void eat()
+	{
+		System.out.println("Non show horses eat all day");
+	}
 
 	}

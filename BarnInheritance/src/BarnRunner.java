@@ -4,33 +4,58 @@ public class BarnRunner
 
 		public static void main(String[] args)
 			{
+				System.out.println(Barn.class.getName() + ":\n");
+				Barn.dust();
+
 				
-				Barn[] superClass = new Barn[2];
-				superClass[0] = new ShowHorses();
-				superClass[1] = new NonShowHorses();
+				Barn[] herd = new Capricorn[2];
+				herd[0] = new ShowHorses();
+				herd[1] = new NonShowHorses();
+			
 				
-				Barn[] polymorph = new ShowHorses[1];
-				polymorph[0] = new ShowHorses();
-				/*Barn[] polymorph2 = new NonShowHorses[1];
-				ShowHorses[] subEverything = new ShowHorses[1];
-				NonShowHorses[] subEverything2 = new NonShowHorses[1]; */
+				Barn[] pen = new Stockyard[2];
+				pen[0] = new ShowCows();
+				pen[1] = new NonShowCows();
 				
-				for(Barn b: superClass)
+				for(Barn b: herd)
 					{
-						b.trainers();
-						//b.animals();
-						//b.barnLook();
-						//b.location();
-						
+						b.animals();
+						b.location();
+						b.barnLook();
+						if(b == herd[0])
+						{
+							
+							b.trainers();
+							((ShowHorses)b).jumpers();
+						}
+						else
+					    {
+					    	
+							b.trainers();
+							((NonShowHorses)b).eat();
+						}
 						
 						System.out.println();
 					}
 				
-				for(Barn b: polymorph)
+	
+				for (Barn b: pen)
 					{
-						b.trainers();
+						b.animals();
+						b.location();
 						b.barnLook();
-						((ShowHorses)b).jumpers();
+						if(b == pen[0])
+							{
+						
+						b.trainers();
+						((ShowCows)b).pedigree();
+							}
+						else
+							{
+						
+						b.trainers();
+						((NonShowCows)b).fat();
+							}
 						
 						System.out.println();
 					}
