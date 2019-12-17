@@ -7,6 +7,11 @@ public class NonShowHorses extends Capricorn
 			name = "Non Show Horses";
 		
 		}
+		
+		public void breed()
+		{
+			System.out.println("Non Show Horses are typically pleasure/work horses: Quarter Horses, Drafts");
+		}
 
 	@Override
 	public void trainers()

@@ -16,7 +16,7 @@ public class ShowCows extends Stockyard
 		
 		public void pedigree()
 		{
-			System.out.println("show cows with excellent pedigree");
+			System.out.println("Show cows have an excellent pedigree");
 		}
 		
 		

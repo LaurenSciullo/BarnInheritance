@@ -7,6 +7,11 @@ public class ShowHorses extends Capricorn
 			
 		
 		}
+		
+		public void breed()
+		{
+			System.out.println("Show Horses are typically Warm Bloods: Oldenburgs, Holsteiners");
+		}
 
 	@Override
 	public void trainers()
